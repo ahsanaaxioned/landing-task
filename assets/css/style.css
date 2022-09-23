@@ -117,11 +117,16 @@ li {
   align-items: center;
 }
 
-.figure:nth-child(1){
+.img1{
   position: absolute;
   top: 0;
   right: 0;
+}
 
+.img2{
+  position: absolute;
+  top: 0;
+  right: 10%;
 }
 
 
