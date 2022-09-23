@@ -234,17 +234,17 @@ li {
   position: absolute;
   top: 30%;
   right: 5.8%;
-  box-shadow:1px 1px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
 
-.figure .img1:hover{
+.figure .img1:hover {
   z-index: 1;
   transform: scale(1.1);
   transition: all .3s ease;
 
 }
 
-.figure .img2:hover{
+.figure .img2:hover {
   transform: scale(1.1);
   transition: all .3s ease;
 }
@@ -286,7 +286,7 @@ li {
   text-transform: capitalize;
 }
 
-.btn{
+.btn {
   padding-top: 30px;
 }
 
@@ -299,27 +299,28 @@ li {
   font-size: 16px;
 }
 
-.btn a:hover{
+.btn a:hover {
   border: 2px solid #4087ED;
   background-color: #fff;
   color: #4087ED;
   transition: all .3S ease;
 }
 
-.btn .para-span{
+.btn .para-span {
   display: inline-block;
   text-transform: capitalize;
 }
 
-.btn a::before{
+.btn a::before {
   padding-right: 5px;
   content: "\f179";
   float: left;
   font-family: "FontAwesome";
 }
+
 /* banner section end here */
 /* shop section start here */
-.shope .wrapper{
+.shope .wrapper {
   width: 88.5%;
   padding-top: 285px;
   display: flex;
@@ -327,16 +328,16 @@ li {
   border-bottom: 2px solid #f2f2f2;
 }
 
-.shope .image{
+.shope .image {
   flex-basis: 33.6%;
 }
 
-.sub-heading{
+.sub-heading {
   padding: 208px 0 176px;
   flex-basis: 48.8%;
 }
 
-.heading{
+.heading {
   padding-bottom: 45px;
   position: relative;
   color: #000204;
@@ -344,17 +345,42 @@ li {
   text-transform: capitalize;
 }
 
-.heading::before{
+.heading::before {
   content: "";
   width: 5.6%;
-  height: 2px ;
+  height: 2px;
   display: block;
   position: absolute;
   top: 62%;
   background-color: #3979D4;
 }
 
-.sub-heading p{
+.sub-heading p {
+  color: #747474;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* shop section end here */
+/* group section start here */
+.group .wrapper {
+  width: 88.5%;
+  padding-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.pixel {
+  padding: 196px 0 176px;
+  flex-basis: 48.8%;
+}
+
+.group .image-1 {
+  flex-basis: 33.6%;
+}
+
+.pixel p {
   color: #747474;
   font-size: 16px;
   line-height: 25px;
