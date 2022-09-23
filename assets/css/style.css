@@ -103,22 +103,15 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
-
+/* banner section start here */
+.banner .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #4DDEFE;
+}
 
 
 
