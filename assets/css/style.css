@@ -355,9 +355,9 @@ li {
   background-color: #3979D4;
 }
 
-.sub-heading p ,
+.sub-heading p,
 .pixel p,
-.design p{
+.design p {
   color: #747474;
   font-size: 16px;
   line-height: 25px;
@@ -365,8 +365,8 @@ li {
 
 /* shop section end here */
 /* group and overview section start here */
-.group .wrapper ,
-.overview .wrapper{
+.group .wrapper,
+.overview .wrapper {
   width: 88.5%;
   padding-top: 173px;
   display: flex;
@@ -374,17 +374,49 @@ li {
   border-bottom: 2px solid #f2f2f2;
 }
 
-.pixel ,
-.overview .design{
+.pixel,
+.overview .design {
   padding: 196px 0 176px;
   flex-basis: 48.8%;
 }
 
-.group .image-1 ,
-.overview .image-2{
+.group .image-1,
+.overview .image-2 {
   flex-basis: 33.6%;
 }
+
 /* group and overview section end here */
+/* customer section start here */
+.customer .wrapper {
+  width: 100%;
+}
+
+.customer .wrapper h4 {
+  font-size: 25px;
+  text-transform: capitalize;
+  padding-top: 112px;
+  text-align: center;
+}
+
+.circle {
+  width: 90px;
+  height: 70px;
+  padding-bottom: 20px;
+  border-radius: 50%;
+  margin: 80px auto 20px auto;
+  display: block;
+  background-color: #A4A5B1;
+  text-indent: -9999px;
+}
+
+.customer .wrapper h5 {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*=================================
   main styling ends here
 =================================*/
