@@ -115,18 +115,60 @@ li {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.figure{
+  flex-basis: 52%;
 }
 
 .img1{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 160px;
+  right: 248px;
 }
 
 .img2{
   position: absolute;
-  top: 0;
-  right: 10%;
+  top: 240px;
+  right: 70px;
+}
+
+.landing{
+  padding-left: 92px;
+  flex-basis: 45%;
+}
+
+.landing h2{
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.landing p{
+  font-size: 22px ;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.landing p a{
+  color: #fff;
+}
+
+.landing p a:hover{
+  color: #000;
+  transition: all .3s ease;
+}
+
+.para-span1{
+  text-transform: uppercase;
+}
+
+.landing .para-span{
+  text-transform: capitalize;
 }
 
 
