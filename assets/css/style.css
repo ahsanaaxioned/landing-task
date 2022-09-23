@@ -355,37 +355,36 @@ li {
   background-color: #3979D4;
 }
 
-.sub-heading p {
+.sub-heading p ,
+.pixel p,
+.design p{
   color: #747474;
   font-size: 16px;
   line-height: 25px;
 }
 
 /* shop section end here */
-/* group section start here */
-.group .wrapper {
+/* group and overview section start here */
+.group .wrapper ,
+.overview .wrapper{
   width: 88.5%;
-  padding-top: 180px;
+  padding-top: 173px;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #f2f2f2;
 }
 
-.pixel {
+.pixel ,
+.overview .design{
   padding: 196px 0 176px;
   flex-basis: 48.8%;
 }
 
-.group .image-1 {
+.group .image-1 ,
+.overview .image-2{
   flex-basis: 33.6%;
 }
-
-.pixel p {
-  color: #747474;
-  font-size: 16px;
-  line-height: 25px;
-}
-
+/* group and overview section end here */
 /*=================================
   main styling ends here
 =================================*/
