@@ -387,6 +387,10 @@ li {
 
 /* group and overview section end here */
 /* customer section start here */
+.customer{
+background-color: #F2F2F2;
+}
+
 .customer .wrapper {
   width: 100%;
 }
@@ -410,12 +414,46 @@ li {
 }
 
 .customer .wrapper h5 {
-  color: #737373;
-  font-size: 13px;
+  color: #878787;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 600;
 }
+
+.star-content{
+  display: flex;
+  justify-content: center;
+}
+
+.star-content .star{
+  display: block;
+  text-indent: -9999px;
+}
+.star-content .star::before{
+  content: "\f005";
+  float: left;
+  margin: 5px 4px 44px 4px;
+  color: #F9CB5E;
+  font-size: 12px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
+
+.star:nth-child(5)::before{
+  color: #D8D8D8;
+}
+
+.customer .wrapper p{
+  font-size: 17px;
+  padding: 15px 279px;
+  text-align: center;
+  line-height: 30px;
+  color: #868686;
+}
+
 
 /*=================================
   main styling ends here
