@@ -87,7 +87,7 @@ summary,
 time,
 mark,
 audio,
-video {
+video,button{
   margin: 0;
   padding: 0;
   border: 0;
@@ -397,7 +397,6 @@ li {
 }
 
 .customer .wrapper h4 {
-  padding-top: 112px;
   font-size: 26px;
   font-weight: 500;
   text-align: center;
@@ -462,9 +461,9 @@ li {
 }
 
 .btn-1 button {
-  width: 8px;
-  height: 8px;
-  border: none;
+  width: 10px;
+  height: 10px;
+  border: 2px solid transparent;
   border-radius: 50%;
   margin-left: 11px;
   background-color: #D5D5D5;
@@ -474,15 +473,20 @@ li {
 
 .btn-1 button:nth-child(2):hover,
 .btn-1 button:nth-child(3):hover {
-  background-color: #3E8AED;
+  border:2px solid #619FEE;
+  transition: all .3s ease;
 }
 
 .btn-1 .blue {
-  background-color: #3E8AED;
+  border:2px solid #619FEE;
 }
 
 /* customer section end here */
 /* feature section start here */
+.feature .wrapper {
+  padding: 124px 0 136px 0;
+}
+
 .more h4 {
   padding-bottom: 40px;
   font-size: 26px;
@@ -504,15 +508,36 @@ li {
 }
 
 .icon {
+  padding-top: 79px;
   display: flex;
   justify-content: space-between;
 }
 
-.icon li a {
-  text-indent: -9999px;
+.icon li {
+  flex-basis: 21%;
+  text-align: center;
 }
 
-.icon-list::before{
+.icon li a {
+  text-indent: -9999px;
+  padding-bottom: 44px;
+}
+
+.icon li h5 {
+  color: #3c3c3c;
+  font-size: 16px;
+  font-weight: 550;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.icon li p {
+  color: #868686;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.icon-list::before {
   padding: 26px 37px;
   border-radius: 13px;
   float: right;
@@ -525,13 +550,22 @@ li {
 }
 
 .everyone::before {
-  content: "\f10b";
+  content: "\f10a";
 }
 
-.good::before{
+.good::before {
   content: "\f004";
-  font-size: 38px;
-  padding: 24px 28px;
+  padding: 26px 27px;
+}
+
+.rate::before {
+  content: "\f005";
+  padding: 26px 29px;
+}
+
+.api::before {
+  content: "\f013";
+  padding: 26px 30px;
 }
 
 /*=================================
