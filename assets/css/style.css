@@ -387,8 +387,8 @@ li {
 
 /* group and overview section end here */
 /* customer section start here */
-.customer{
-background-color: #F2F2F2;
+.customer {
+  background-color: #F2F2F2;
 }
 
 .customer .wrapper {
@@ -424,16 +424,17 @@ background-color: #F2F2F2;
   text-transform: uppercase;
 }
 
-.star-content{
+.star-content {
   display: flex;
   justify-content: center;
 }
 
-.star-content .star{
+.star-content .star {
   display: block;
   text-indent: -9999px;
 }
-.star-content .star::before{
+
+.star-content .star::before {
   content: "\f005";
   float: left;
   margin: 8px 4px 44px 4px;
@@ -443,11 +444,11 @@ background-color: #F2F2F2;
   text-indent: 0;
 }
 
-.star:nth-child(5)::before{
+.star:nth-child(5)::before {
   color: #D8D8D8;
 }
 
-.customer .wrapper p{
+.customer .wrapper p {
   padding: 0 279px;
   color: #868686;
   font-size: 17px;
@@ -455,12 +456,12 @@ background-color: #F2F2F2;
   text-align: center;
 }
 
-.btn-1{
+.btn-1 {
   padding-top: 52px;
   text-align: center;
 }
 
-.btn-1 button{
+.btn-1 button {
   width: 8px;
   height: 8px;
   border: none;
@@ -472,16 +473,17 @@ background-color: #F2F2F2;
 }
 
 .btn-1 button:nth-child(2):hover,
-.btn-1 button:nth-child(3):hover{
+.btn-1 button:nth-child(3):hover {
   background-color: #3E8AED;
 }
 
-.btn-1 .blue{
- background-color: #3E8AED;
+.btn-1 .blue {
+  background-color: #3E8AED;
 }
+
 /* customer section end here */
 /* feature section start here */
-.more h4{
+.more h4 {
   padding-bottom: 40px;
   font-size: 26px;
   font-weight: 500;
@@ -489,11 +491,46 @@ background-color: #F2F2F2;
   text-transform: capitalize;
 }
 
-.more h4+p{
+.more h4+p {
   color: #868686;
   font-size: 17px;
+  line-height: 30px;
+  text-align: center;
 }
 
+.block {
+  display: block;
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon li a {
+  text-indent: -9999px;
+}
+
+.icon li a::before{
+  padding: 24px 40px 24px 40px;
+  border-radius: 13px;
+  float: right;
+  background-color: #EEEEEF;
+  color: #3887ED;
+  cursor: initial;
+  font-family: "FontAwesome";
+  font-size: 50px;
+  text-indent: 0;
+}
+
+.icon li .everyone::before {
+  content: "\f10b";
+}
+
+.icon li .good{
+  content: "\f004";
+}
 
 /*=================================
   main styling ends here
