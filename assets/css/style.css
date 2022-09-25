@@ -87,7 +87,8 @@ summary,
 time,
 mark,
 audio,
-video,button{
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -474,12 +475,12 @@ li {
 
 .btn-1 button:nth-child(2):hover,
 .btn-1 button:nth-child(3):hover {
-  border:2px solid #619FEE;
+  border: 2px solid #619FEE;
   transition: all .3s ease;
 }
 
 .btn-1 .blue {
-  border:2px solid #619FEE;
+  border: 2px solid #619FEE;
 }
 
 /* customer section end here */
@@ -569,18 +570,88 @@ li {
   content: "\f013";
   padding: 26px 30px;
 }
+
 /* feature section end here */
 /* subscribe setion start here */
-.subscibe h4{
-  padding-bottom: 30px;
+.subscibe {
+  background-color: #39DEFE;
+}
+
+.subscibe .wrapper {
+  padding: 119px 0 126px;
+}
+
+.subscibe h4 {
+  padding-bottom: 23px;
   color: #120B04;
   font-size: 28px;
   text-align: center;
 }
+
+.subscibe p {
+  padding-bottom: 90px;
+  color: #547591;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.input-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-text {
+  flex-basis: 31.3%;
+}
+
+.btn-3 {
+  flex-basis: 32%;
+}
+
+.input-text input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 22px 0;
+  border: none;
+  border-radius: 3px;
+  background-color: #88ECFF;
+}
+
+.input-text input:focus {
+  background-color: #fff;
+}
+
+.input-text input::placeholder {
+  width: 100%;
+  padding-left: 21px;
+  color: #120B04;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.btn-3 button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 0;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: #3887ED;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.btn-3 button:hover {
+  border: 2px solid #3887ED;
+  background-color: #fff;
+  color: #3887ED;
+  transition: all .3s ease;
+}
+
 /*=================================
   main styling ends here
 =================================*/
-
 /*=================================
   footer styling starts here
 =================================*/
