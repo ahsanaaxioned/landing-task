@@ -512,24 +512,26 @@ li {
   text-indent: -9999px;
 }
 
-.icon li a::before{
-  padding: 24px 40px 24px 40px;
+.icon-list::before{
+  padding: 26px 37px;
   border-radius: 13px;
   float: right;
   background-color: #EEEEEF;
   color: #3887ED;
   cursor: initial;
   font-family: "FontAwesome";
-  font-size: 50px;
+  font-size: 40px;
   text-indent: 0;
 }
 
-.icon li .everyone::before {
+.everyone::before {
   content: "\f10b";
 }
 
-.icon li .good{
+.good::before{
   content: "\f004";
+  font-size: 38px;
+  padding: 24px 28px;
 }
 
 /*=================================
