@@ -393,13 +393,15 @@ background-color: #F2F2F2;
 
 .customer .wrapper {
   width: 100%;
+  padding: 118px 0 124px 0;
 }
 
 .customer .wrapper h4 {
-  font-size: 25px;
-  text-transform: capitalize;
   padding-top: 112px;
+  font-size: 26px;
+  font-weight: 500;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .circle {
@@ -420,7 +422,6 @@ background-color: #F2F2F2;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .star-content{
@@ -435,7 +436,7 @@ background-color: #F2F2F2;
 .star-content .star::before{
   content: "\f005";
   float: left;
-  margin: 5px 4px 44px 4px;
+  margin: 8px 4px 44px 4px;
   color: #F9CB5E;
   font-size: 12px;
   font-family: "FontAwesome";
@@ -447,11 +448,50 @@ background-color: #F2F2F2;
 }
 
 .customer .wrapper p{
-  font-size: 17px;
-  padding: 15px 279px;
-  text-align: center;
-  line-height: 30px;
+  padding: 0 279px;
   color: #868686;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.btn-1{
+  padding-top: 52px;
+  text-align: center;
+}
+
+.btn-1 button{
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 11px;
+  background-color: #D5D5D5;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.btn-1 button:nth-child(2):hover,
+.btn-1 button:nth-child(3):hover{
+  background-color: #3E8AED;
+}
+
+.btn-1 .blue{
+ background-color: #3E8AED;
+}
+/* customer section end here */
+/* feature section start here */
+.more h4{
+  padding-bottom: 40px;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.more h4+p{
+  color: #868686;
+  font-size: 17px;
 }
 
 
