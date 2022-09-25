@@ -655,6 +655,64 @@ li {
 /*=================================
   footer styling starts here
 =================================*/
+footer {
+  padding: 126px 0 123px 0;
+}
+
+footer p {
+  color: #A7A2A9;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+footer p a {
+  color: #5698F1;
+}
+
+footer p a:hover {
+  color: #000;
+  transition: all .3s ease;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list {
+  text-indent: -9999px;
+}
+
+.social-list::before {
+  padding: 33px 0 0 45px;
+  float: left;
+  color: #3887ED;
+  font-family: "FontAwesome";
+  font-size: 29px;
+  text-indent: 0;
+}
+
+.social li .facebook::before {
+  content: "\f09a";
+}
+
+.social li .twitter::before {
+  content: "\f099";
+}
+
+.social li .linkedin::before {
+  content: "\f0e1";
+}
+
+.social li .apple::before {
+  content: "\f179";
+}
+
+.social-list:hover::before {
+  color: #747474;
+  transition: all .3s ease;
+}
 
 
 
