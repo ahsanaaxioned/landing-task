@@ -7,819 +7,930 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-/* Force scrollbar */
-html {
-  overflow-y: scroll;
-}
-
-/* Align radios and text inputs with their label */
-
-input[type='radio'] {
-  vertical-align: text-bottom;
-}
-
-/* Hand cursor on clickable input elements */
-label,
-input[type='button'],
-input[type='submit'],
-button {
-  cursor: pointer;
-}
-
-strong {
-  font-weight: bold;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-em {
-  font-style: italic;
-}
-
-img {
-  width: 100%;
-  border: 0;
-  vertical-align: middle;
-}
-
-sub,
-sup {
-  vertical-align: baseline;
-  position: relative;
-  font-size: 55%;
-  line-height: 0;
-}
-
-sup {
-  top: -.7em;
-}
-
-sub {
-  bottom: -.25em;
-}
-
-/* 1.2. Clear Fix
-   ========================== */
-
-.cf:before,
-.cf:after {
-  display: table;
-  content: " ";
-}
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  *zoom: 1;
-}
-
-/*for all*/
-body {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  overflow: hidden;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-/*for wrapper*/
-.wrapper {
-  max-width: 1360px;
-  width: 86%;
-  margin: 0 auto;
-}
-
-/*=================================
-  main styling starts here
-=================================*/
-/* banner section start here */
-.banner {
-  padding: 290px 0 300px;
-  position: relative;
-  background-color: #4DDEFE;
-}
-
-.banner .wrapper {
-  width: 86%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.figure { flex-basis: 45%; }
-
-.img1 {
-  position: absolute;
-  top: 20%;
-  right: 19.2%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.img2 {
-  position: absolute;
-  top: 30%;
-  right: 5.8%;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
-}
-
-.figure .img1:hover {
-  z-index: 1;
-  transform: scale(1.1);
-  transition: all .3s ease;
-
-}
-
-.figure .img2:hover {
-  transform: scale(1.1);
-  transition: all .3s ease;
-}
-
-.landing { flex-basis: 50%; }
-
-.landing h2 {
-  padding-bottom: 15px;
-  color: #fff;
-  font-size: 38px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.landing p {
-  color: #ECFCFE;
-  font-size: 22px;
-  letter-spacing: 1px;
-  line-height: 35px;
-}
-
-.landing p a {
-  border-bottom: 2px solid #92eef9;
-  color: #ECFCFE;
-}
-
-.landing p a:hover {
-  color: #000;
-  transition: all .3s ease;
-}
-
-.para-span1 { text-transform: uppercase; }
-
-.para-span { text-transform: capitalize; }
-
-.btn { padding-top: 30px; }
-
-.btn a {
-  padding: 13px 19px;
-  border: 2px solid transparent;
-  border-radius: 40px;
-  color: #fff;
-  background-color: #4087ED;
-  font-size: 16px;
-}
-
-.btn a:hover {
-  border: 2px solid #4087ED;
-  background-color: #fff;
-  color: #4087ED;
-  transition: all .3S ease;
-}
-
-.btn .para-span {
-  display: inline-block;
-  text-transform: capitalize;
-}
-
-.btn a::before {
-  padding-right: 5px;
-  content: "\f179";
-  float: left;
-  font-family: "FontAwesome";
-}
-
-/* banner section end here */
-/* shop section start here */
-.shope .wrapper {
-  width: 88.5%;
-  padding-top: 285px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #f2f2f2;
-}
-
-.shope .image { flex-basis: 33.6%; }
-
-.sub-heading {
-  padding: 208px 0 176px;
-  flex-basis: 48.8%;
-}
-
-.heading {
-  padding-bottom: 45px;
-  position: relative;
-  color: #000204;
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.heading::after {
-  content: "";
-  width: 5.6%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  top: 62%;
-  background-color: #3979D4;
-}
-
-.sub-heading p,
-.pixel p,
-.design p {
-  color: #747474;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-/* shop section end here */
-/* group and overview section start here */
-.group .wrapper,
-.overview .wrapper {
-  width: 88.5%;
-  padding-top: 173px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #f2f2f2;
-}
-
-.pixel,
-.overview .design {
-  padding: 196px 0 176px;
-  flex-basis: 48.8%;
-}
-
-.group .image-1,
-.overview .image-2 { flex-basis: 33.6%; }
-/* group and overview section end here */
-/* customer section start here */
-.customer { background-color: #F2F2F2; }
-
-.customer .wrapper {
-  width: 100%;
-  padding: 118px 0 124px 0;
-}
-
-.customer .wrapper h4 {
-  color: #120B04;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.circle {
-  width: 90px;
-  height: 70px;
-  padding-bottom: 20px;
-  border-radius: 50%;
-  margin: 80px auto 20px auto;
-  display: block;
-  background-color: #A4A5B1;
-  text-indent: -9999px;
-}
-
-.customer .wrapper h5 {
-  color: #878787;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.star-content {
-  display: flex;
-  justify-content: center;
-}
-
-.star-content .star {
-  display: block;
-  text-indent: -9999px;
-}
-
-.star-content .star::before {
-  content: "\f005";
-  float: left;
-  margin: 8px 4px 44px 4px;
-  color: #F9CB5E;
-  font-size: 12px;
-  font-family: "FontAwesome";
-  text-indent: 0;
-}
-
-.star:nth-child(5)::before { color: #D8D8D8; }
-
-.customer .wrapper p {
-  padding: 0 279px;
-  color: #868686;
-  font-size: 17px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.btn-1 {
-  padding-top: 52px;
-  text-align: center;
-}
-
-.btn-1 button {
-  width: 10px;
-  height: 10px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  margin-left: 11px;
-  background-color: #D5D5D5;
-  cursor: pointer;
-  text-indent: -9999px;
-}
-
-.btn-1 button:nth-child(2):hover,
-.btn-1 button:nth-child(3):hover {
-  border: 2px solid #619FEE;
-  transition: all .3s ease;
-}
-
-.btn-1 .blue { border: 2px solid #619FEE; }
-
-/* customer section end here */
-/* feature section start here */
-.feature .wrapper { padding: 124px 0 136px 0; }
-
-.more h4 {
-  padding-bottom: 40px;
-  color: #120B04;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.more h4+p {
-  color: #868686;
-  font-size: 17px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.block {
-  display: block;
-  text-align: center;
-}
-
-.icon {
-  padding-top: 79px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.icon li {
-  flex-basis: 21%;
-  text-align: center;
-}
-
-.icon li a {
-  text-indent: -9999px;
-  padding-bottom: 44px;
-}
-
-.icon li h5 {
-  color: #3c3c3c;
-  font-size: 16px;
-  font-weight: 550;
-  padding-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.icon li p {
-  color: #868686;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.icon-list::before {
-  padding: 26px 37px;
-  border-radius: 13px;
-  float: right;
-  background-color: #EEEEEF;
-  color: #3887ED;
-  cursor: initial;
-  font-family: "FontAwesome";
-  font-size: 40px;
-  text-indent: 0;
-}
-
-.everyone::before { content: "\f10a"; }
-
-.good::before {
-  content: "\f004";
-  padding: 26px 27px;
-}
-
-.rate::before {
-  content: "\f005";
-  padding: 26px 29px;
-}
-
-.api::before {
-  content: "\f013";
-  padding: 26px 30px;
-}
-
-/* feature section end here */
-/* subscribe setion start here */
-.subscibe { background-color: #39DEFE; }
-
-.subscibe .wrapper { padding: 119px 0 126px; }
-
-.subscibe h4 {
-  padding-bottom: 23px;
-  color: #120B04;
-  font-size: 28px;
-  text-align: center;
-}
-
-.subscibe p {
-  padding-bottom: 90px;
-  color: #547591;
-  font-size: 20px;
-  line-height: 35px;
-  text-align: center;
-}
-
-.input-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-text { flex-basis: 31.3%; }
-
-.btn-3 { flex-basis: 32%; }
-
-.input-text input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 22px 0;
-  border: none;
-  border-radius: 3px;
-  background-color: #88ECFF;
-}
-
-.input-text input:focus { background-color: #fff; }
-
-.input-text input::placeholder {
-  width: 100%;
-  padding-left: 21px;
-  color: #120B04;
-  font-size: 16px;
-  text-transform: capitalize;
-}
-
-.btn-3 button {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 16px 0;
-  border: 2px solid transparent;
-  border-radius: 30px;
-  background-color: #3887ED;
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.btn-3 button:hover {
-  border: 2px solid #3887ED;
-  background-color: #fff;
-  color: #3887ED;
-  transition: all .3s ease;
-}
-
-/*=================================
-  main styling ends here
-=================================*/
-/*=================================
-  footer styling starts here
-=================================*/
-footer { padding: 126px 0 123px 0; }
-
-footer p {
-  color: #A7A2A9;
-  font-size: 15px;
-  text-align: center;
-  line-height: 30px;
-}
-
-footer p a { color: #5698F1; }
-
-footer p a:hover {
-  color: #000;
-  transition: all .3s ease;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-}
-
-.social-list { text-indent: -9999px; }
-
-.social-list::before {
-  padding: 33px 23px 0 23px;
-  float: left;
-  color: #3887ED;
-  font-family: "FontAwesome";
-  font-size: 29px;
-  text-indent: 0;
-}
-
-.social li .facebook::before { content: "\f09a"; }
-
-.social li .twitter::before { content: "\f099"; }
-
-.social li .linkedin::before { content: "\f0e1"; }
-
-.social li .apple::before { content: "\f179"; }
-
-.social-list:hover::before {
-  color: #747474;
-  transition: all .3s ease;
-}
-/*=================================
-  footer styling ends here
-=================================*/
-
-/*media query starts*/
-/*media query for 1201px starts here*/
-@media only screen and (min-width: 1201px) {
-.shope .image ,
-.group .image-1,
-.overview .image-2{ flex-basis: 37.6%; }
-
-}
-/*media query for 1201px starts here*/
-/*media query for 1025px-1200px starts here*/
-@media only screen and (min-width: 1025px) and (max-width:1200px) {
-.shope .image ,
-.group .image-1,
-.overview .image-2{ flex-basis: 46.6%; }
-
-.sub-heading,
-.pixel,
-.overview .design { flex-basis: 40.8%; }
-
-.img1{ right: 10.2%; }
-
-.img2{ right: 2.8%; }
-
-}
-/*media query for 1025px-1200px end here*/
-/*media query for 996px-1024px starts here*/
-@media only screen and (min-width: 996px) and (max-width:1024px) {
-.shope .image ,
-.group .image-1,
-.overview .image-2{ flex-basis: 47.6%; }
-
-.sub-heading,
-.pixel,
-.overview .design { flex-basis: 40.8%; }
-.img1{ right: 10.2%; }
-
-.img2{ right: 2.8%; }
-
-}
-/*media query for 996px-1024px starts here*/
-/*media query for 781px-995px starts here*/
-@media only screen and (min-width: 781px) and (max-width:995px) {
-
-.landing { flex-basis: 43%; }
-
-.shope .image ,
-.group .image-1,
-.overview .image-2{ flex-basis: 47.6%; }
-
-.sub-heading,
-.pixel,
-.overview .design { flex-basis: 40.8%; }
-
-.img1{ right: 7.2%; }
-
-.img2{ right: 3.8%; }
-.shope .wrapper,
-.group .wrapper,
-.overview .wrapper {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-.heading::after{ left: 39%; }
-
-.pixel .heading::after{ left: 40%; }
-
-.design .heading::after{ left: 38%; }
-.icon {
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.icon-list::before { margin-top: 25px; }
-
-.customer .wrapper p {  padding: 0px 120px; }
-
-.input-info {
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.input-text {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.btn-3{ width: 100%; }
-
-}
-/*media query for 996px-1024px starts here*/
-/*media query for 481px-780px starts here*/
-@media only screen and (min-width: 481px) and (max-width:780px) {
-  .landing { flex-basis: 43%; }
-
-    .shope .image ,
-    .group .image-1,
-    .overview .image-2{
-      flex-basis: 47.6%;
-  }
-  .sub-heading,
-  .pixel,
-  .overview .design { flex-basis: 40.8%; }
-
-  .img1{ right: 7.2%; }
-  
-  .img2{ right: 3.8%; }
-
-  .shope .wrapper,
-  .group .wrapper,
-  .overview .wrapper {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  .heading::after{ left: 39%; }
-  
-  .pixel .heading::after{ left: 40%; }
-  
-  .design .heading::after{
-    left: 38%;
-  }
-  .icon {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .icon-list::before { margin-top: 25px; }
-  
-  .customer .wrapper p {
-    padding: 0px 120px;
-  }
-  .input-info {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  .input-text {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .btn-3{ width: 100%; }
-
-  }
-  /*media query for 481px-780px starts here*/
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video,
+   button {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   
+   /* HTML5 display-role reset for older browsers */
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   
+   /* Force scrollbar */
+   html {
+     overflow-y: scroll;
+   }
+   
+   /* Align radios and text inputs with their label */
+   
+   input[type='radio'] {
+     vertical-align: text-bottom;
+   }
+   
+   /* Hand cursor on clickable input elements */
+   label,
+   input[type='button'],
+   input[type='submit'],
+   button {
+     cursor: pointer;
+   }
+   
+   strong {
+     font-weight: bold;
+     font-family: inherit;
+     font-size: inherit;
+   }
+   
+   em {
+     font-style: italic;
+   }
+   
+   img {
+     width: 100%;
+     border: 0;
+     vertical-align: middle;
+   }
+   
+   sub,
+   sup {
+     vertical-align: baseline;
+     position: relative;
+     font-size: 55%;
+     line-height: 0;
+   }
+   
+   sup {
+     top: -.7em;
+   }
+   
+   sub {
+     bottom: -.25em;
+   }
+   
+   /* 1.2. Clear Fix
+      ========================== */
+   
+   .cf:before,
+   .cf:after {
+     display: table;
+     content: " ";
+   }
+   
+   .cf:after {
+     clear: both;
+   }
+   
+   .cf {
+     *zoom: 1;
+   }
+   
+   /*for all*/
+   body {
+     box-sizing: border-box;
+     font-family: sans-serif;
+     overflow: hidden;
+   }
+   
+   a {
+     display: inline-block;
+     text-decoration: none;
+   }
+   
+   li {
+     display: inline-block;
+     list-style-type: none;
+   }
+   
+   /*for wrapper*/
+   .wrapper {
+     max-width: 1360px;
+     width: 86%;
+     margin: 0 auto;
+   }
+   
+   /*=================================
+     main styling starts here
+   =================================*/
+   /* banner section start here */
+   .banner {
+     padding: 290px 0 300px;
+     position: relative;
+     background-color: #4DDEFE;
+   }
+   
+   .banner .wrapper {
+     width: 86%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+   
+   .figure { flex-basis: 45%; }
+   
+   .img1 {
+     position: absolute;
+     top: 20%;
+     right: 19.2%;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   
+   .img2 {
+     position: absolute;
+     top: 30%;
+     right: 5.8%;
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+   }
+   
+   .figure .img1:hover {
+     z-index: 1;
+     transform: scale(1.1);
+     transition: all .3s ease;
+   
+   }
+   
+   .figure .img2:hover {
+     transform: scale(1.1);
+     transition: all .3s ease;
+   }
+   
+   .landing { flex-basis: 50%; }
+   
+   .landing h2 {
+     padding-bottom: 15px;
+     color: #fff;
+     font-size: 38px;
+     font-weight: 500;
+     text-transform: uppercase;
+   }
+   
+   .landing p {
+     color: #ECFCFE;
+     font-size: 22px;
+     letter-spacing: 1px;
+     line-height: 35px;
+   }
+   
+   .landing p a {
+     border-bottom: 2px solid #92eef9;
+     color: #ECFCFE;
+   }
+   
+   .landing p a:hover {
+     color: #000;
+     transition: all .3s ease;
+   }
+   
+   .para-span1 { text-transform: uppercase; }
+   
+   .para-span { text-transform: capitalize; }
+   
+   .btn { padding-top: 30px; }
+   
+   .btn a {
+     padding: 13px 19px;
+     border: 2px solid transparent;
+     border-radius: 40px;
+     color: #fff;
+     background-color: #4087ED;
+     font-size: 16px;
+   }
+   
+   .btn a:hover {
+     border: 2px solid #4087ED;
+     background-color: #fff;
+     color: #4087ED;
+     transition: all .3S ease;
+   }
+   
+   .btn .para-span {
+     display: inline-block;
+     text-transform: capitalize;
+   }
+   
+   .btn a::before {
+     padding-right: 5px;
+     content: "\f179";
+     float: left;
+     font-family: "FontAwesome";
+   }
+   
+   /* banner section end here */
+   /* shop section start here */
+   .shope .wrapper {
+     width: 88.5%;
+     padding-top: 285px;
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 2px solid #f2f2f2;
+   }
+   
+   .shope .image { flex-basis: 33.6%; }
+   
+   .sub-heading {
+     padding: 208px 0 176px;
+     flex-basis: 48.8%;
+   }
+   
+   .heading {
+     padding-bottom: 45px;
+     position: relative;
+     color: #000204;
+     font-size: 30px;
+     text-transform: capitalize;
+   }
+   
+   .heading::after {
+     content: "";
+     width: 5.6%;
+     height: 2px;
+     display: block;
+     position: absolute;
+     top: 62%;
+     background-color: #3979D4;
+   }
+   
+   .sub-heading p,
+   .pixel p,
+   .design p {
+     color: #747474;
+     font-size: 16px;
+     line-height: 25px;
+   }
+   
+   /* shop section end here */
+   /* group and overview section start here */
+   .group .wrapper,
+   .overview .wrapper {
+     width: 88.5%;
+     padding-top: 173px;
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 2px solid #f2f2f2;
+   }
+   
+   .pixel,
+   .overview .design {
+     padding: 196px 0 176px;
+     flex-basis: 48.8%;
+   }
+   
+   .group .image-1,
+   .overview .image-2 { flex-basis: 33.6%; }
+   /* group and overview section end here */
+   /* customer section start here */
+   .customer { background-color: #F2F2F2; }
+   
+   .customer .wrapper {
+     width: 100%;
+     padding: 118px 0 124px 0;
+   }
+   
+   .customer .wrapper h4 {
+     color: #120B04;
+     font-size: 28px;
+     font-weight: 500;
+     text-align: center;
+     text-transform: capitalize;
+   }
+   
+   .circle {
+     width: 90px;
+     height: 70px;
+     padding-bottom: 20px;
+     border-radius: 50%;
+     margin: 80px auto 20px auto;
+     display: block;
+     background-color: #A4A5B1;
+     text-indent: -9999px;
+   }
+   
+   .customer .wrapper h5 {
+     color: #878787;
+     font-size: 12px;
+     font-weight: 600;
+     letter-spacing: 2px;
+     text-align: center;
+     text-transform: uppercase;
+   }
+   
+   .star-content {
+     display: flex;
+     justify-content: center;
+   }
+   
+   .star-content .star {
+     display: block;
+     text-indent: -9999px;
+   }
+   
+   .star-content .star::before {
+     content: "\f005";
+     float: left;
+     margin: 8px 4px 44px 4px;
+     color: #F9CB5E;
+     font-size: 12px;
+     font-family: "FontAwesome";
+     text-indent: 0;
+   }
+   
+   .star:nth-child(5)::before { color: #D8D8D8; }
+   
+   .customer .wrapper p {
+     padding: 0 279px;
+     color: #868686;
+     font-size: 17px;
+     line-height: 30px;
+     text-align: center;
+   }
+   
+   .btn-1 {
+     padding-top: 52px;
+     text-align: center;
+   }
+   
+   .btn-1 button {
+     width: 10px;
+     height: 10px;
+     border: 2px solid transparent;
+     border-radius: 50%;
+     margin-left: 11px;
+     background-color: #D5D5D5;
+     cursor: pointer;
+     text-indent: -9999px;
+   }
+   
+   .btn-1 button:nth-child(2):hover,
+   .btn-1 button:nth-child(3):hover {
+     border: 2px solid #619FEE;
+     transition: all .3s ease;
+   }
+   
+   .btn-1 .blue { border: 2px solid #619FEE; }
+   
+   /* customer section end here */
+   /* feature section start here */
+   .feature .wrapper { padding: 124px 0 136px 0; }
+   
+   .more h4 {
+     padding-bottom: 40px;
+     color: #120B04;
+     font-size: 28px;
+     font-weight: 500;
+     text-align: center;
+     text-transform: capitalize;
+   }
+   
+   .more h4+p {
+     color: #868686;
+     font-size: 17px;
+     line-height: 30px;
+     text-align: center;
+   }
+   
+   .block {
+     display: block;
+     text-align: center;
+   }
+   
+   .icon {
+     padding-top: 79px;
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .icon li {
+     flex-basis: 21%;
+     text-align: center;
+   }
+   
+   .icon li a {
+     text-indent: -9999px;
+     padding-bottom: 44px;
+   }
+   
+   .icon li h5 {
+     color: #3c3c3c;
+     font-size: 16px;
+     font-weight: 550;
+     padding-bottom: 15px;
+     text-transform: uppercase;
+   }
+   
+   .icon li p {
+     color: #868686;
+     font-size: 16px;
+     line-height: 30px;
+   }
+   
+   .icon-list::before {
+     padding: 26px 37px;
+     border-radius: 13px;
+     float: right;
+     background-color: #EEEEEF;
+     color: #3887ED;
+     cursor: initial;
+     font-family: "FontAwesome";
+     font-size: 40px;
+     text-indent: 0;
+   }
+   
+   .everyone::before { content: "\f10a"; }
+   
+   .good::before {
+     content: "\f004";
+     padding: 26px 27px;
+   }
+   
+   .rate::before {
+     content: "\f005";
+     padding: 26px 29px;
+   }
+   
+   .api::before {
+     content: "\f013";
+     padding: 26px 30px;
+   }
+   
+   /* feature section end here */
+   /* subscribe setion start here */
+   .subscibe { background-color: #39DEFE; }
+   
+   .subscibe .wrapper { padding: 119px 0 126px; }
+   
+   .subscibe h4 {
+     padding-bottom: 23px;
+     color: #120B04;
+     font-size: 28px;
+     text-align: center;
+   }
+   
+   .subscibe p {
+     padding-bottom: 90px;
+     color: #547591;
+     font-size: 20px;
+     line-height: 35px;
+     text-align: center;
+   }
+   
+   .input-info {
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .input-text { flex-basis: 31.3%; }
+   
+   .btn-3 { flex-basis: 32%; }
+   
+   .input-text input {
+     box-sizing: border-box;
+     width: 100%;
+     padding: 22px 0;
+     border: none;
+     border-radius: 3px;
+     background-color: #88ECFF;
+   }
+   
+   .input-text input:focus { background-color: #fff; }
+   
+   .input-text input::placeholder {
+     width: 100%;
+     padding-left: 21px;
+     color: #120B04;
+     font-size: 16px;
+     text-transform: capitalize;
+   }
+   
+   .btn-3 button {
+     box-sizing: border-box;
+     width: 100%;
+     padding: 16px 0;
+     border: 2px solid transparent;
+     border-radius: 30px;
+     background-color: #3887ED;
+     color: #fff;
+     font-size: 20px;
+     text-transform: uppercase;
+   }
+   
+   .btn-3 button:hover {
+     border: 2px solid #3887ED;
+     background-color: #fff;
+     color: #3887ED;
+     transition: all .3s ease;
+   }
+   
+   /*=================================
+     main styling ends here
+   =================================*/
+   /*=================================
+     footer styling starts here
+   =================================*/
+   footer { padding: 126px 0 123px 0; }
+   
+   footer p {
+     color: #A7A2A9;
+     font-size: 15px;
+     text-align: center;
+     line-height: 30px;
+   }
+   
+   footer p a { color: #5698F1; }
+   
+   footer p a:hover {
+     color: #000;
+     transition: all .3s ease;
+   }
+   
+   .social {
+     display: flex;
+     justify-content: center;
+   }
+   
+   .social-list { text-indent: -9999px; }
+   
+   .social-list::before {
+     padding: 33px 23px 0 23px;
+     float: left;
+     color: #3887ED;
+     font-family: "FontAwesome";
+     font-size: 29px;
+     text-indent: 0;
+   }
+   
+   .social li .facebook::before { content: "\f09a"; }
+   
+   .social li .twitter::before { content: "\f099"; }
+   
+   .social li .linkedin::before { content: "\f0e1"; }
+   
+   .social li .apple::before { content: "\f179"; }
+   
+   .social-list:hover::before {
+     color: #747474;
+     transition: all .3s ease;
+   }
+   /*=================================
+     footer styling ends here
+   =================================*/
+   
+   /*media query starts*/
+   /*media query for 1201px starts here*/
+   @media only screen and (min-width: 1201px) {
+   .shope .image ,
+   .group .image-1,
+   .overview .image-2{ flex-basis: 37.6%; }
+   
+   }
+   /*media query for 1201px starts here*/
+   /*media query for 1025px-1200px starts here*/
+   @media only screen and (min-width: 1025px) and (max-width:1200px) {
+   .shope .image ,
+   .group .image-1,
+   .overview .image-2{ flex-basis: 46.6%; }
+   
+   .sub-heading,
+   .pixel,
+   .overview .design { flex-basis: 40.8%; }
+   
+   .img1{ right: 8.2%; }
+   
+   .img2{ right: 3.8%; }
+   
+   }
+   /*media query for 1025px-1200px end here*/
+   /*media query for 996px-1024px starts here*/
+   @media only screen and (min-width: 996px) and (max-width:1024px) {
+   .shope .image ,
+   .group .image-1,
+   .overview .image-2{ flex-basis: 47.6%; }
+   
+   .sub-heading,
+   .pixel,
+   .overview .design { flex-basis: 40.8%; }
+   .img1{ right: 10.2%; }
+   
+   .img2{ right: 2.8%; }
+   
+   }
+   /*media query for 996px-1024px starts here*/
+   /*media query for 781px-995px starts here*/
+   @media only screen and (min-width: 781px) and (max-width:995px) {
+   
+   .landing { flex-basis: 43%; }
+   
+   .shope .image ,
+   .group .image-1,
+   .overview .image-2{ flex-basis: 47.6%; }
+   
+   .sub-heading,
+   .pixel,
+   .overview .design { flex-basis: 40.8%; }
+   
+   .img1{ 
+     top: 26%;
+     right: 9.2%;
+    }
+   
+   .img2{ right: 4.2%; }
+   
+   .shope .wrapper,
+   .group .wrapper,
+   .overview .wrapper {
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+   }
+   .heading::after{ 
+     width: 19.6%;
+     left: 40%;
+    }
+   
+   .pixel .heading::after{ left: 40%; }
+   
+   .design .heading::after{ left: 38%; }
+   .icon {
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+   }
+   
+   .icon-list::before { margin-top: 25px; }
+   
+   .customer .wrapper p {  padding: 0px 120px; }
+   
+   .input-info {
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+   }
+   .input-text {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+   
+   .btn-3{ width: 100%; }
+   
+   }
+   /*media query for 996px-1024px starts here*/
+   /*media query for 481px-780px starts here*/
+   @media only screen and (min-width: 481px) and (max-width:780px) {
+   
+     .banner { padding: 100px 0 82px; }
+   
+     .landing { flex-basis: 43%; }
+   
+     .landing h2 { font-size: 30px };
+   
+     .shope .image ,
+     .group .image-1,
+     .overview .image-2{flex-basis: 47.6%; }
+   
+     .btn a {font-size: 11px;}
+   
+     .sub-heading,
+     .pixel,
+     .overview .design { flex-basis: 40.8%; }
+   
+   
+     .landing p { font-size: 15px; }
+   
+     .img1{ 
+       width: 30%;
+       right: 14.2%; 
+     }
+     
+     .img2{ 
+       width: 30%;
+       right: 5.8%; 
+     }
+   
+    .shope .wrapper,
+    .group .wrapper,
+    .overview .wrapper {
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+   }
+   
+   .customer .wrapper p { padding: 0px 45px; }
+   
+     .heading::after{ 
+       width: 22.6%;
+       left: 39%;
+      }
+   
+     .icon {
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+     }
+     
+     .icon-list::before { margin-top: 25px; }
+     
+     .input-info {
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+     }
+   
+     .input-text {
+       width: 100%;
+       margin-bottom: 20px;
+     }
+     
+     .btn-3{ width: 100%; }
+   
+     }
+     /*media query for 481px-780px starts here*/
+     /*media query for 320px-480px starts here*/
+   @media only screen and (min-width: 320px) and (max-width:480px) {
+   
+     .banner { padding: 100px 0 82px; }
+   
+     .landing { flex-basis: 72%; }
+   
+     .landing h2 { font-size: 30px };
+   
+     .shope .image ,
+     .group .image-1,
+     .overview .image-2{flex-basis: 47.6%; }
+   
+     .btn a {font-size: 11px;}
+   
+     .sub-heading,
+     .pixel,
+     .overview .design { 
+       padding: 80px 0 40px;
+       flex-basis: 40.8%;
+      }
+   
+     .shope .wrapper,
+     .group .wrapper,
+     .overview .wrapper{
+       padding-top: 90px;
+     }
+   
+     .landing p { font-size: 15px; }
+   
+     .img1{ 
+       width: 30%;
+       right: 11.2%; 
+     }
+     
+     .img2{ 
+       width: 30%;
+       right: 4.8%; 
+     }
+   
+    .shope .wrapper,
+    .group .wrapper,
+    .overview .wrapper {
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+   }
+   
+   .customer .wrapper p { padding: 0px 25px; }
+   
+     .heading::after{ 
+       width: 22.6%;
+       left: 39%;
+      }
+
+      .more h4+p { font-size: 15px; }
+   
+     .icon {
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+     }
+     
+     .icon-list::before { margin-top: 25px; }
+   
+     .subscibe p {
+       padding: 90px 5px ;
+       font-size: 18px;
+     }
+     
+     .input-info {
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+     }
+   
+     .input-text {
+       width: 100%;
+       margin-bottom: 20px;
+     }
+     
+     .btn-3{ width: 100%; }
+   
+     }
+   
+     footer p{ font-size: 12px; }
+     /*media query for 320px-480px starts here*/
