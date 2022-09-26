@@ -346,7 +346,7 @@ li {
   text-transform: capitalize;
 }
 
-.heading::before {
+.heading::after {
   content: "";
   width: 5.6%;
   height: 2px;
@@ -685,7 +685,7 @@ footer p a:hover {
 }
 
 .social-list::before {
-  padding: 33px 0 0 45px;
+  padding: 33px 23px 0 23px;
   float: left;
   color: #3887ED;
   font-family: "FontAwesome";
@@ -713,17 +713,117 @@ footer p a:hover {
   color: #747474;
   transition: all .3s ease;
 }
-
-
-
-
-
-
-
 /*=================================
   footer styling ends here
 =================================*/
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}
+/*media query for 1201px starts here*/
+@media only screen and (min-width: 1201px) {
+  .shope .image ,
+  .group .image-1,
+  .overview .image-2{
+    flex-basis: 37.6%;
+}
+}
+/*media query for 1201px starts here*/
+/*media query for 1025px-1200px starts here*/
+@media only screen and (min-width: 1025px) and (max-width:1200px) {
+  .shope .image ,
+  .group .image-1,
+  .overview .image-2{
+    flex-basis: 46.6%;
+}
+.sub-heading,
+.pixel,
+.overview .design {
+  flex-basis: 40.8%;
+}
+
+.img1{
+  right: 10.2%;
+}
+
+.img2{
+  right: 2.8%;
+}
+}
+/*media query for 1025px-1200px end here*/
+/*media query for 996px-1024px starts here*/
+@media only screen and (min-width: 996px) and (max-width:1024px) {
+  .shope .image ,
+  .group .image-1,
+  .overview .image-2{
+    flex-basis: 47.6%;
+}
+.sub-heading,
+.pixel,
+.overview .design {
+  flex-basis: 40.8%;
+}
+.img1{
+  right: 10.2%;
+}
+
+.img2{
+  right: 2.8%;
+}
+}
+/*media query for 996px-1024px starts here*/
+/*media query for 996px-1024px starts here*/
+@media only screen and (min-width: 781px) and (max-width:995px) {
+
+.landing {
+  flex-basis: 43%;
+}
+  .shope .image ,
+  .group .image-1,
+  .overview .image-2{
+    flex-basis: 47.6%;
+}
+.sub-heading,
+.pixel,
+.overview .design {
+  flex-basis: 40.8%;
+}
+.img1{
+  right: 7.2%;
+}
+
+.img2{
+  right: 3.8%;
+}
+.shope .wrapper,
+.group .wrapper,
+.overview .wrapper {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.heading::after{
+  left: 39%;
+}
+
+.pixel .heading::after{
+  left: 40%;
+}
+
+.design .heading::after{
+  left: 38%;
+}
+.icon {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-list::before {
+  margin-top: 25px;
+}
+
+.customer .wrapper p {
+  padding: 0px 120px;
+}
+}
