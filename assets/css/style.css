@@ -688,9 +688,9 @@ footer p a:hover {
 .pixel,
 .overview .design { flex-basis: 40.8%; }
 
-.img1{ right: 10.2%; }
+.img1{ right: 8.2%; }
 
-.img2{ right: 2.8%; }
+.img2{ right: 3.8%; }
 
 }
 /*media query for 1025px-1200px end here*/
@@ -722,9 +722,13 @@ footer p a:hover {
 .pixel,
 .overview .design { flex-basis: 40.8%; }
 
-.img1{ right: 7.2%; }
+.img1{ 
+  top: 26%;
+  right: 9.2%;
+ }
 
-.img2{ right: 3.8%; }
+.img2{ right: 4.2%; }
+
 .shope .wrapper,
 .group .wrapper,
 .overview .wrapper {
@@ -733,7 +737,10 @@ footer p a:hover {
   flex-direction: column;
   text-align: center;
 }
-.heading::after{ left: 39%; }
+.heading::after{ 
+  width: 19.6%;
+  left: 40%;
+ }
 
 .pixel .heading::after{ left: 40%; }
 
@@ -766,36 +773,52 @@ footer p a:hover {
 /*media query for 996px-1024px starts here*/
 /*media query for 481px-780px starts here*/
 @media only screen and (min-width: 481px) and (max-width:780px) {
+
+  .banner { padding: 100px 0 82px; }
+
   .landing { flex-basis: 43%; }
 
-    .shope .image ,
-    .group .image-1,
-    .overview .image-2{
-      flex-basis: 47.6%;
-  }
+  .landing h2 { font-size: 30px };
+
+  .shope .image ,
+  .group .image-1,
+  .overview .image-2{flex-basis: 47.6%; }
+
+  .btn a {font-size: 11px;}
+
   .sub-heading,
   .pixel,
   .overview .design { flex-basis: 40.8%; }
 
-  .img1{ right: 7.2%; }
-  
-  .img2{ right: 3.8%; }
 
-  .shope .wrapper,
-  .group .wrapper,
-  .overview .wrapper {
+  .landing p { font-size: 15px; }
+
+  .img1{ 
+    width: 30%;
+    right: 14.2%; 
+  }
+  
+  .img2{ 
+    width: 30%;
+    right: 5.8%; 
+  }
+
+ .shope .wrapper,
+ .group .wrapper,
+ .overview .wrapper {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-  }
-  .heading::after{ left: 39%; }
-  
-  .pixel .heading::after{ left: 40%; }
-  
-  .design .heading::after{
-    left: 38%;
-  }
+}
+
+.customer .wrapper p { padding: 0px 45px; }
+
+  .heading::after{ 
+    width: 22.6%;
+    left: 39%;
+   }
+
   .icon {
     align-items: center;
     flex-direction: column;
@@ -805,15 +828,13 @@ footer p a:hover {
   
   .icon-list::before { margin-top: 25px; }
   
-  .customer .wrapper p {
-    padding: 0px 120px;
-  }
   .input-info {
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
+
   .input-text {
     width: 100%;
     margin-bottom: 20px;
@@ -823,3 +844,91 @@ footer p a:hover {
 
   }
   /*media query for 481px-780px starts here*/
+  /*media query for 320px-480px starts here*/
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+  .banner { padding: 100px 0 82px; }
+
+  .landing { flex-basis: 72%; }
+
+  .landing h2 { font-size: 30px };
+
+  .shope .image ,
+  .group .image-1,
+  .overview .image-2{flex-basis: 47.6%; }
+
+  .btn a {font-size: 11px;}
+
+  .sub-heading,
+  .pixel,
+  .overview .design { 
+    padding: 80px 0 40px;
+    flex-basis: 40.8%;
+   }
+
+  .shope .wrapper,
+  .group .wrapper,
+  .overview .wrapper{
+    padding-top: 90px;
+  }
+
+  .landing p { font-size: 15px; }
+
+  .img1{ 
+    width: 30%;
+    right: 11.2%; 
+  }
+  
+  .img2{ 
+    width: 30%;
+    right: 4.8%; 
+  }
+
+ .shope .wrapper,
+ .group .wrapper,
+ .overview .wrapper {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.customer .wrapper p { padding: 0px 25px; }
+
+  .heading::after{ 
+    width: 22.6%;
+    left: 39%;
+   }
+
+  .icon {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .icon-list::before { margin-top: 25px; }
+
+  .subscibe p {
+    padding: 90px 5px ;
+    font-size: 18px;
+  }
+  
+  .input-info {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .input-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .btn-3{ width: 100%; }
+
+  }
+
+  footer p{ font-size: 12px; }
+  /*media query for 320px-480px starts here*/
